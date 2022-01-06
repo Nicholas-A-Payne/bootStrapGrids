@@ -63,25 +63,30 @@
 
 <main class="flex-shrink-0">
     <div class="container mt-1 h-100 minHeight">
-       <div class="row row-cols-1 row-cols-md-2 gy-3 h-100"> 
-           <div class="col-12">
-             <div class="bg-dark text-light h-100">
-                 COL ONE
-             </div>
-           </div>
-           <div class="col d-flex">
-             <div class="bg-secondary text-light h-100">
-                 COL TWO
-             </div>
-         </div>
-         <div class="col d-flex">
-             <div class="bg-dark text-light h-100">
-                 COL THREE
-             </div>
-         </div>
-      </div>
+       <div class="row h-100 gy-2">
+            <div class="col-12">
+                <div class="bg-secondary h-100 text-light">
+                    COL ONE
+                </div>
+            </div>
+            <div class="col-12 col-md-6 order-last">
+                <div class="bg-dark h-100 text-light">
+                    COL TWO
+                     Move this column to position three on mobile.
+                     Keep left on MD breadkpoints and above!
+                </div>
+            </div>
+            <div class="col-12 col-md-6 order-md-last">
+                <div class="bg-info h-100 text-light">
+                    COL THREE.
+                    Move this column to position two on mobile.
+                    Keep Right on MD breadkpoints and above!
+                </div>
+            </div>
+       </div>
     </div>
  </main>
+
     <footer class="footer mt-auto py-3 bg-light sticky-footer">
         <div class="container-fluid text-center">
             <span class="text-muted">&copy; Built by Nicholas Payne</span>
